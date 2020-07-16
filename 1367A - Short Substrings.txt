@@ -1,0 +1,30 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+     int t;
+     string b;
+     cin>>t;
+     while(t--){
+         cin>>b;
+       if(b.length()==2){
+        cout<<b<<endl;
+
+       }
+       else{
+         string a;
+         a+=b[0];
+
+
+        for(int p=2;p<b.length();p+=2){
+          a+=b[p];
+        }
+        a+=b[b.length()-1];
+        cout<<a<<endl;
+        }
+       }
+     }
+
+
