@@ -1,0 +1,14 @@
+#include <iostream>
+#include <string>
+#include <algorithm>
+using namespace std;
+
+int main()
+{
+    int m,n;
+    int p=2;
+    cin>>m>>n;
+    int q=m*n;
+    int ans=q/p;
+    cout<<ans<<endl;
+}
