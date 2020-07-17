@@ -1,0 +1,26 @@
+#include <iostream>
+#include <cstring>
+#include <algorithm>
+using namespace std;
+
+int main()
+{
+    char n[100];
+    int count=0;
+    cin>>n;
+    int p =strlen(n);
+
+    for(int i=0;i<p;i++){
+        if(n[i]=='4' || n[i]=='7'){
+            count++;
+        }
+    }
+
+    if(count==4 || count==7){
+        cout<<"YES"<<endl;
+    }
+    else{
+        cout<<"NO"<<endl;
+    }
+}
+
