@@ -1,0 +1,23 @@
+#include <iostream>
+#include <string>
+#include <algorithm>
+using namespace std;
+
+int main()
+{
+    string s;
+    cin>>s;
+    char p =s[0];
+    if(p >='A' && p <= 'Z'){
+
+    }
+    else{
+        p=p-32;
+    }
+    cout<<p;
+    for(int i=1;i<s.length();i++){
+        cout<<s[i];
+    }
+
+}
+
