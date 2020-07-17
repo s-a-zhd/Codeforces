@@ -1,0 +1,28 @@
+#include <iostream>
+#include <string>
+#include <algorithm>
+using namespace std;
+
+int main()
+{
+   int k,w,q=0;
+    long int n;
+    int result;
+   cin>>k>>w>>n;
+   if(n!=0){
+    for(int i=1;i<=n;i++){
+        int p=k*i;
+         q+=p;
+        }
+    result=q-w;
+    if(result<0){
+        cout<<"0"<<endl;
+    }
+
+    else{
+        cout<<result<<endl;
+    }
+
+
+}
+}
