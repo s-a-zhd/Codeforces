@@ -1,0 +1,70 @@
+#include <iostream>
+#include <cstring>
+#include <stdio.h>
+#include <ctype.h>
+using namespace std;
+
+int main()
+{
+    string s,r;
+    cin>>s;
+    int countL=0,countU=0;
+    int n = s.size();
+    for(int p=0;p<n;p++){
+
+        if(s[p]>='A' && s[p]<='Z'){
+            countU++;
+        }
+        else{
+            countL++;
+        }
+
+    }
+
+    if(countL==countU){
+        for(int i=0;i<n;i++){
+            if(s[i]>='A' && s[i]<='Z'){
+              s[i]=tolower(s[i]);
+
+            }
+            else{
+            }
+
+
+        }
+     cout<<s<<endl;
+
+
+    }
+
+    else if(countL<countU){
+        for(int i=0;i<s.size();i++){
+            if(s[i]>='a' && s[i]<='z'){
+              s[i]=toupper(s[i]);
+            }
+            else{
+
+            }
+
+        }
+        cout<<s<<endl;
+    }
+
+
+
+
+    else if(countL>countU){
+        for(int i=0;i<s.size();i++){
+            if(s[i]>='A' && s[i]<='Z'){
+              s[i]=tolower(s[i]);
+            }
+            else{
+
+            }
+
+
+        }
+         cout<<s<<endl;
+    }
+}
+
