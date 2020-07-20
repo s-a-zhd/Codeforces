@@ -1,0 +1,33 @@
+#include <iostream>
+#include <stdlib.h>
+#include <stdio.h>
+#include <ctype.h>
+using namespace std;
+
+int main()
+{
+  int n,p,v,t,count=0;
+  cin>>n;
+  for(int i=0;i<n;i++){
+    cin>>p>>v>>t;
+    if(p==0 && v==0){
+        count++;
+        continue;
+    }
+    else if(p==0 && t==0){
+        count++;
+        continue;
+    }
+    else if(v==0 && t==0){
+        count++;
+        continue;
+    }
+  }
+  
+  int res=abs(n-count);
+  cout<<res<<endl;
+
+}
+
+
+
