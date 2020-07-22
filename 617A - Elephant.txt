@@ -1,0 +1,34 @@
+#include <bits/stdc++.h>
+#include <iostream>
+#include <stdlib.h>
+#include <stdio.h>
+#include <ctype.h>
+#include <cstring>
+#include <algorithm>
+using namespace std;
+
+int main()
+{
+
+    int x,y=1,p,z;
+    cin>>x;
+
+    if(x%5==0){
+        y=x/5;
+        cout<<y;
+    }
+    else{
+        y=(x/5)+1;
+        cout<<y;
+    }
+
+
+
+
+}
+
+
+
+
+
+
