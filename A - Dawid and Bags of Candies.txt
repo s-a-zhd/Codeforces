@@ -1,0 +1,41 @@
+#include <bits/stdc++.h>
+#include <iostream>
+#include <stdlib.h>
+#include <stdio.h>
+#include <ctype.h>
+#include <string>
+#include <algorithm>
+using namespace std;
+
+int main()
+{
+    int a[4];
+    cin>>a[0]>>a[1]>>a[2]>>a[3];
+    int e=a[0]+a[1]+a[2]+a[3];
+
+    sort(a,a+4,greater<int>());
+    if(e%2==0){
+        if(a[0]==a[1]+a[2]+a[3] || a[0]+a[2]==a[1]+a[3] || a[0]+a[3]==a[2]+a[1]){
+            cout<<"YES";
+        }
+        else{
+            cout<<"NO";
+        }
+    }
+    else{
+        cout<<"NO";
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
