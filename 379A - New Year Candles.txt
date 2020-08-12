@@ -1,0 +1,19 @@
+#include <bits/stdc++.h>
+#include <iostream>
+#include <algorithm>
+#include <string>
+using namespace std;
+
+int main(){
+ int a,b,c,d,e;
+ cin>>a>>b;
+ c=a;
+ while(a>=b){
+   d=a/b;
+   c=c+d;
+   e=a%b;
+   a=d+e;
+ }
+
+ cout<<c;
+}
